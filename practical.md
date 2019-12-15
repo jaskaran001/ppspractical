@@ -446,37 +446,64 @@ Enter height of rectangle:4
 The area of rectangle is:12
 The volume is :48
 </code></pre>
-<h2 id="wap-to-print-a-patterns-of-calculator">16: WAP to print a patterns of calculator</h2>
+<h2 id="wap-to-print-a-patterns-of-calculator">16:WAP to find factorial of a number</h2>
 <pre><code>#include&lt;stdio.h&gt;
 int main()
 {
-puts(" _______________");
-puts("|               |");
-puts("|_______________|");
-puts("| 1 | 2 | 3 |   |");
-puts("|___|___|___|   |");
-puts("| 4 | 5 | 6 | + |");
-puts("|___|___|___|___|");
-puts("| 7 | 8 | 9 | - |");
-puts("|___|___|___|___|");
-puts("|     0     | * |");
-puts("|___________|___|");
+int n,i;
+unsigned long long factorial=1;
+printf("enter a number");
+scanf("%d",&amp;n);
+if(n&lt;0)
+{
+printf("ERROR!");
+}
+else
+{
+for(i=1;i&lt;=n;i++)
+{
+factorial*=i;
+}
+}printf("\nFactorial of %d =%llu\n",n,factorial);
+return 0;
 }
 </code></pre>
-<p><strong>OUTPUT</strong></p>
-<pre><code> _______________
-|               |
-|_______________|
-| 1 | 2 | 3 |   |
-|___|___|___|   |
-| 4 | 5 | 6 | + |
-|___|___|___|___|
-| 7 | 8 | 9 | - |
-|___|___|___|___|
-|     0     | * |
-|___________|___|
+<p><strong>OUTPUT</strong>:</p>
+<pre><code>enter a number7
+
+Factorial of 7 =5040
 </code></pre>
-<h2 id="wap-to-print-a-pattern-of-face">17:WAP to print a pattern of face</h2>
+<h2 id="wap-to-print-stars-pattern">17: WAP to print stars pattern</h2>
+<pre><code> // TO show stars using loop 
+#include&lt;stdio.h&gt;
+int main()
+{ int i,j,k;
+ printf("Enter the no. to show pattern:");
+ scanf("%d",&amp;k);
+ 
+  for(i=k;i&gt;=1;i--)
+ {
+  for(j=i;j&gt;=1;j--)
+ {
+  printf("* ");
+ }
+ printf("\n");
+ }
+ return 0;
+ }
+</code></pre>
+<p><strong>OUTPUT</strong>:</p>
+<pre><code>Enter the no. to show pattern:8
+* * * * * * * * 
+* * * * * * * 
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+</code></pre>
+<h2 id="wap-to-print-a-pattern-of-face">18:WAP to print a pattern of face</h2>
 <pre><code>#include&lt;stdio.h&gt;
 int a();
 int main()
@@ -508,64 +535,7 @@ puts("|_________|________|");
 |        |        |
 |________|________|
 </code></pre>
-<h2 id="wap-to-print-stars-pattern">18:WAP to print stars pattern</h2>
-<pre><code> // TO show stars using loop 
-#include&lt;stdio.h&gt;
-int main()
-{ int i,j,k;
- printf("Enter the no. to show pattern:");
- scanf("%d",&amp;k);
- 
-  for(i=k;i&gt;=1;i--)
- {
-  for(j=i;j&gt;=1;j--)
- {
-  printf("* ");
- }
- printf("\n");
- }
- return 0;
- }
-</code></pre>
-<p><strong>OUTPUT</strong>:</p>
-<pre><code>Enter the no. to show pattern:8
-* * * * * * * * 
-* * * * * * * 
-* * * * * * 
-* * * * * 
-* * * * 
-* * * 
-* * 
-*
-</code></pre>
-<h2 id="wap-to-find-factorial-of-a-number">19:WAP to find factorial of a number</h2>
-<pre><code>#include&lt;stdio.h&gt;
-int main()
-{
-int n,i;
-unsigned long long factorial=1;
-printf("enter a number");
-scanf("%d",&amp;n);
-if(n&lt;0)
-{
-printf("ERROR!");
-}
-else
-{
-for(i=1;i&lt;=n;i++)
-{
-factorial*=i;
-}
-}printf("\nFactorial of %d =%llu\n",n,factorial);
-return 0;
-}
-</code></pre>
-<p><strong>OUTPUT</strong>:</p>
-<pre><code>enter a number7
-
-Factorial of 7 =5040
-</code></pre>
-<h2 id="wap-to-find-the-factorial-of-a-number-by-using-recursion">20:WAP to find the factorial of a number by using recursion</h2>
+<h2 id="wap-to-find-the-factorial-of-a-number-by-using-recursion">19:WAP to find the factorial of a number by using recursion</h2>
 <pre><code>
 #include&lt;stdio.h&gt;
 int main()
@@ -593,7 +563,7 @@ factorial of 5 is 120
 
 
 </code></pre>
-<h2 id="write-a-program-to-add-two-matrices">21:Write a program to add two matrices</h2>
+<h2 id="write-a-program-to-add-two-matrices">20:Write a program to add two matrices</h2>
 <pre><code>   #include &lt;stdio.h&gt;
 
     int main()

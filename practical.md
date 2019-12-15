@@ -8,64 +8,70 @@
 <h3><b>Guru Nanak Dev Engineering College
     ESC-18104/18105 Programming for Problem Solving</b>
 <pre><code>Name-Jaskaran Singh 
-Branch-InformationTechnology
+Branch-Information Technology
 Section - A2 
 Roll Number - 1921048
 
-# My C programes 
+# My C programs 
 </code></pre>
-</h3><h2 id="wap-to-swap-two-numbers-with-the-help-of-third-number">1:WAP to swap two number’s with the help of third number</h2>
+</h3><h2 id="wap-to-swap-two-numbers-with-the-help-of-third-number">1: WAP to convert Fahrenheit to Celsius</h2>
 <pre><code>#include&lt;stdio.h&gt;
 int main()
- {
-int first, second, temp;
-printf("Enter first number: ");
-scanf("%d",  &amp;first);
-printf("Enter second number: ");
-scanf("%d",  &amp;second);
-
-temp = first
-
-first = second;
-
-second = temp;
-
-printf("\nAfter swapping, firstNumber = %d\n", first);
-printf("After swapping, secondNumber = %d", second);   
- return  0
+{
+float  c,f;
+printf("Enter The Fahrenheit Value ");
+scanf("%f",&amp;f);
+c=(f-32)*5/9;
+printf("Temprature in Centigrade=%f\n",c);
+return 0;
 }
 </code></pre>
-<p><strong>OUTPUT:</strong></p>
-<pre><code>Enter first number: 12
-Enter second number: 14
+<p><strong>OUTPUT</strong>:</p>
+<pre><code>Enter The Fahrenheit Value 22
+Temprature in Centigrade=-5.555555
 
-After swapping, firstNumber = 14
-After swapping, secondNumber = 12
-...
 
 </code></pre>
-<h2 id="wap-to-swap-two-numbers-without-using-third-number">2: WAP to swap two number’s without using third number</h2>
-<pre><code>#include &lt;stdio.h&gt;
-
-int  main()  
-{  
-int  a,  b;  
-  
-printf("Input two integers (a &amp; b) to swap\n");  
-scanf("%d%d",  &amp;a,  &amp;b);  
-  
-a  =  a  +  b;  
-b  =  a  -  b;  
-a  =  a  -  b;
-
-printf("a = %d\nb = %d\n",a,b);  
-return  0;  
+<h2 id="wap-to-swap-two-numbers-without-using-third-number">2:  WAP to show result of operands</h2>
+<pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+float a,b;
+char c;
+printf("enter two numbers:");
+scanf("%f %f",&amp;a,&amp;b);
+printf("enter the operator to perform (+,-,*,%,/)=");
+scanf(" %c",&amp;c);
+int d,r;
+d=(int)a;
+r=(int)b;
+switch(c)
+{
+case '+':
+printf("%f",a+b);
+break;
+case '-':
+printf("%f",a-b);
+break;
+case '%':
+printf("%d",d%r);
+break;
+case '*':
+printf("%f",a*b);
+break;
+case '/':
+printf("%f",a/b);
+break;
+default:
+printf("you entered wrong operand");
+}
+return 0;
 }
 </code></pre>
-<p><strong>OUTPUT:</strong></p>
-<pre><code>Input two integers (a &amp; b) to swap 12 14
-a=14
-b=12
+<p><strong>OUTPUT</strong>:</p>
+<pre><code>enter two numbers:12 30
+enter the operator to perform (+,-,*,%,/)=%
+12
 </code></pre>
 <h2 id="wap-to-find-sum-of-two-numbers">3:WAP to find sum of two numbers</h2>
 <pre><code>#include&lt;stdio.h&gt;
@@ -105,26 +111,31 @@ The result is :45 + 55= 100
 The sum is:15
 The average is:3
 </code></pre>
-<h2 id="wap-to-check-if-number-is-even-or-odd">5:WAP to check if number is even or odd</h2>
-<pre><code>     #include&lt;stdio.h&gt;
-int main()
-{                                
-  int a;   
- printf("Enter a number:");
+<h2 id="wap-to-check-if-number-is-even-or-odd">5:WAP to show puts value upto n number using loop</h2>
+<pre><code>// to show punishment using loop
+ #include&lt;stdio.h&gt;
+ int main()
+ {
+ int i,a;
+ printf("Enter the number upto punishment is shown:");
  scanf("%d",&amp;a);
-if(a%2==0)
-printf("The  number is even\n");
-else
- printf("The number is odd\n");
+  for(i=1;i&lt;=a;i++)
+puts("WORK HARD AND ACHIEVE SUCCESS ");
+return 0;
 }
 </code></pre>
 <p><strong>OUTPUT</strong>:</p>
-<pre><code>Enter a number:4
-The  number is even
-</code></pre>
-<p><em><strong>OR</strong></em></p>
-<pre><code>Enter a number:7
-The number is odd
+<pre><code>Enter the number upto punishment is shown:10
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS 
+WORK HARD AND ACHIEVE SUCCESS
 </code></pre>
 <h2 id="wap-to-check-if-the-no.-is-a-prime-no.-or-not">6:WAP to check if the no. is a prime no. or not</h2>
 <pre><code>#include&lt;stdio.h&gt;
@@ -182,31 +193,26 @@ return 0;
 <pre><code>Enter starting and ending number4 9 
 5 is a prime number7 is a prime number
 </code></pre>
-<h2 id="wap-to-show-puts-value-upto-n-number-using-loop">8:WAP to show puts value upto n number using loop</h2>
-<pre><code>// to show punishment using loop
- #include&lt;stdio.h&gt;
- int main()
- {
- int i,a;
- printf("Enter the number upto punishment is shown:");
+<h2 id="wap-to-show-puts-value-upto-n-number-using-loop">8:WAP to check if number is even or odd</h2>
+<pre><code>     #include&lt;stdio.h&gt;
+int main()
+{                                
+  int a;   
+ printf("Enter a number:");
  scanf("%d",&amp;a);
-  for(i=1;i&lt;=a;i++)
-puts("WORK HARD AND ACHIEVE SUCCESS ");
-return 0;
+if(a%2==0)
+printf("The  number is even\n");
+else
+ printf("The number is odd\n");
 }
 </code></pre>
 <p><strong>OUTPUT</strong>:</p>
-<pre><code>Enter the number upto punishment is shown:10
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS
+<pre><code>Enter a number:4
+The  number is even
+</code></pre>
+<p><em><strong>OR</strong></em></p>
+<pre><code>Enter a number:7
+The number is odd
 </code></pre>
 <h2 id="wap-to-show-areadiametercircumference-of-circle">9:WAP to show area,diameter,circumference of circle</h2>
 <pre><code>   #include&lt;stdio.h&gt;
@@ -228,34 +234,58 @@ diameter of circle is:12.000000
 circumference of circle:37.680000
 Area of circle:113.040001
 </code></pre>
-<h2 id="wap-to-find-area-and-volume-of-rectangle">10:WAP to find area and volume of rectangle</h2>
-<pre><code>//find area and volume of rectangle
-#include&lt;stdio.h&gt;
+<h2 id="wap-to-find-area-and-volume-of-rectangle">10:WAP to swap two number’s without using third number</h2>
+<pre><code>#include &lt;stdio.h&gt;
+
+int  main()  
+{  
+int  a,  b;  
+  
+printf("Input two integers (a &amp; b) to swap\n");  
+scanf("%d%d",  &amp;a,  &amp;b);  
+  
+a  =  a  +  b;  
+b  =  a  -  b;  
+a  =  a  -  b;
+
+printf("a = %d\nb = %d\n",a,b);  
+return  0;  
+}
+</code></pre>
+<p><strong>OUTPUT:</strong></p>
+<pre><code>Input two integers (a &amp; b) to swap 12 14
+a=14
+b=12
+</code></pre>
+<h2 id="wap-to-represent-a-table-of-user-input">11 .WAP to swap two number’s with the help of third number</h2>
+<pre><code>#include&lt;stdio.h&gt;
 int main()
-{
- int l,b,h;
- printf("Enter length of rectangle:");
- scanf("%d",&amp;l);
- printf("\nEnter breadth of rectangle:");
- scanf("%d",&amp;b);
- printf("\nEnter height of rectangle:");
- scanf("%d",&amp;h);
- printf("\nThe area of rectangle is:%d",l*b);
- printf("\nThe volume is :%d\n",l*b*h);
- return 0;
- }
+ {
+int first, second, temp;
+printf("Enter first number: ");
+scanf("%d",  &amp;first);
+printf("Enter second number: ");
+scanf("%d",  &amp;second);
+
+temp = first
+
+first = second;
+
+second = temp;
+
+printf("\nAfter swapping, firstNumber = %d\n", first);
+printf("After swapping, secondNumber = %d", second);   
+ return  0
+}
 </code></pre>
-<p><strong>OUTPUT</strong>:</p>
-<pre><code>Enter length of rectangle:4 
+<p><strong>OUTPUT:</strong></p>
+<pre><code>Enter first number: 12
+Enter second number: 14
 
-Enter breadth of rectangle:3 
-
-Enter height of rectangle:4
-
-The area of rectangle is:12
-The volume is :48
+After swapping, firstNumber = 14
+After swapping, secondNumber = 12
 </code></pre>
-<h2 id="wap-to-represent-a-table-of-user-input">11 .WAP to represent a table of user input</h2>
+<h2 id="wap-to-convert-fahrenheit-to-celsius">12:WAP to represent a table of user input</h2>
 <pre><code>#include&lt;stdio.h&gt;
 int main()
 {
@@ -283,22 +313,6 @@ return 0;
  4 X 8=32
  4 X 9=36
  4 X 10=40
-</code></pre>
-<h2 id="wap-to-convert-fahrenheit-to-celsius">12: WAP to convert Fahrenheit to Celsius</h2>
-<pre><code>#include&lt;stdio.h&gt;
-int main()
-{
-float  c,f;
-printf("Enter The Fahrenheit Value ");
-scanf("%f",&amp;f);
-c=(f-32)*5/9;
-printf("Temprature in Centigrade=%f\n",c);
-return 0;
-}
-</code></pre>
-<p><strong>OUTPUT</strong>:</p>
-<pre><code>Enter The Fahrenheit Value 22
-Temprature in Centigrade=-5.555555
 </code></pre>
 <h2 id="wap-to-show-the-table-of-numbers-in-user-specified-range">13: WAP to show the table of numbers in user specified range</h2>
 <pre><code>#include&lt;stdio.h&gt;
@@ -405,46 +419,32 @@ return 0;
  6X9=54
  6X10=60
 </code></pre>
-<h2 id="wap-to-show-result-of-operands">15: WAP to show result of operands</h2>
-<pre><code>#include&lt;stdio.h&gt;
+<h2 id="wap-to-show-result-of-operands">15:WAP to find area and volume of rectangle</h2>
+<pre><code>//find area and volume of rectangle
+#include&lt;stdio.h&gt;
 int main()
 {
-float a,b;
-char c;
-printf("enter two numbers:");
-scanf("%f %f",&amp;a,&amp;b);
-printf("enter the operator to perform (+,-,*,%,/)=");
-scanf(" %c",&amp;c);
-int d,r;
-d=(int)a;
-r=(int)b;
-switch(c)
-{
-case '+':
-printf("%f",a+b);
-break;
-case '-':
-printf("%f",a-b);
-break;
-case '%':
-printf("%d",d%r);
-break;
-case '*':
-printf("%f",a*b);
-break;
-case '/':
-printf("%f",a/b);
-break;
-default:
-printf("you entered wrong operand");
-}
-return 0;
-}
+ int l,b,h;
+ printf("Enter length of rectangle:");
+ scanf("%d",&amp;l);
+ printf("\nEnter breadth of rectangle:");
+ scanf("%d",&amp;b);
+ printf("\nEnter height of rectangle:");
+ scanf("%d",&amp;h);
+ printf("\nThe area of rectangle is:%d",l*b);
+ printf("\nThe volume is :%d\n",l*b*h);
+ return 0;
+ }
 </code></pre>
 <p><strong>OUTPUT</strong>:</p>
-<pre><code>enter two numbers:12 30
-enter the operator to perform (+,-,*,%,/)=%
-12
+<pre><code>Enter length of rectangle:4 
+
+Enter breadth of rectangle:3 
+
+Enter height of rectangle:4
+
+The area of rectangle is:12
+The volume is :48
 </code></pre>
 <h2 id="wap-to-print-a-patterns-of-calculator">16: WAP to print a patterns of calculator</h2>
 <pre><code>#include&lt;stdio.h&gt;
